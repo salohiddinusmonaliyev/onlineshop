@@ -1,2 +1,1 @@
 Online Shop
-@salohiddin-usmonaliyev

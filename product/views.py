@@ -31,7 +31,8 @@ class Detail(View):
         Comment.objects.create(text=text, product=pr, user=re.user)
         return redirect(f"/1/1/{p}/")
 
-def listing(request):
+    
+def paginator(request):
     p = Paginator(Product.objects.all(), 1)
     page = request.GET.get('page')
     pages =p.get_page(page)
